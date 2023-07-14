@@ -119,14 +119,14 @@ class IcedCoffee extends Coffee{
     milkType;
     flavour;
     sweetener;
-    constructor(size, decaf, milkType, flavour, sweetener){
-        super(size, decaf);
+    constructor(size, isDecaf, milkType, flavour, sweetener){
+        super(size, isDecaf);
         this.milkType = milkType;
         this.flavour = flavour;
         this.sweetener = sweetener;
     };
     description(){
-        output2.textContent = `I would like a ${this.size} ${this.decaf} ${this.flavour} flavoured iced coffee with ${this.milkType} and ${this.sweetener}.`;
+        output2.textContent = `I would like a ${this.size} ${this.flavour} flavoured iced coffee with ${this.milkType} and ${this.sweetener}.`;
     }
 }
 
